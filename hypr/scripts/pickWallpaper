@@ -2,11 +2,11 @@
 if [ "$USE_RANDOM_WALLPAPER" = "true" ]; then
     wal -i /home/$USER/.config/hypr/wallpapers/miku3.jpg
     #Update Kitty Colors
-    swaybg -o \* -i /home/$USER/.config/hypr/wallpapers/miku3.jpg -m fill &
+    swww img  /home/$USER/.config/hypr/wallpapers/miku3.jpg --transition-step 1 --transition-fpr 120 &
 else
     random_wallpaper=$(find /home/$USER/.config/hypr/wallpapers -type f | shuf -n 1)
     wal -i $random_wallpaper
-    swaybg -o \* -i $random_wallpaper -m fill &
+    swww img $random_wallpaper --transition-step 100 --transition-fps 120 --transition-type any
 fi
 
 python /home/$USER/.config/hypr/scripts/updateColors.py
