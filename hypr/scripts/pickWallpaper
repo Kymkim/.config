@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+if [ "$USE_RANDOM_WALLPAPER" = "true" ]; then
+    wal -i /home/$USER/.config/hypr/wallpapers/miku3.jpg
+    #Update Kitty Colors
+    swaybg -o \* -i /home/$USER/.config/hypr/wallpapers/miku3.jpg -m fill &
+else
+    random_wallpaper=$(find /home/$USER/.config/hypr/wallpapers -type f | shuf -n 1)
+    wal -i $random_wallpaper
+    swaybg -o \* -i $random_wallpaper -m fill &
+fi
+
+python /home/$USER/.config/hypr/scripts/updateColors.py
