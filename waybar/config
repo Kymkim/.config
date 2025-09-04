@@ -1,0 +1,15 @@
+// ~/.config/waybar/config
+{
+  "layer": "top",
+  "position": "left",   // or "right"
+  "orientation": "vertical",
+
+  "modules-center": [
+    "workspaces"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "battery",
+    "clock",
+  ]
+}
