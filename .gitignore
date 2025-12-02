@@ -1,22 +1,13 @@
-Actual
-assets
-Code
-Code - OSS
-dconf
-gh
-kde.org
-kicad
-nwg-look
-paru
-pulse
-simple-update-notifier
-superfile
-syncthing-gtk
-Thunar
-vesktop
-wayhidy
-xfce4
-xsettingsd
-dolphinrc
-mimeapps.list
-pavucontrol.ini
+# Ignore everything
+*
+
+!.gitignore
+!ags/**
+!btop/**
+!gtk-3.0/**
+!gtk-4.0/**
+!hypr/**
+!kitty/**
+!neofetch/**
+!rofi/**
+!waybar/**
