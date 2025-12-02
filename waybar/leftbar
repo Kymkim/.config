@@ -1,0 +1,21 @@
+
+{
+  "layer": "top",
+  "position": "left",
+  "width": 50,
+  "name": "leftbar",
+  "modules-left": [],
+  "modules-center": ["clock#A", "image#clock-divider", "clock#C"],
+  "modules-right": ["battery"],
+
+  "clock#A": {
+    "format": "{:%I}"
+  },
+  "image#clock-divider": {
+    "path": "/home/ukim/.config/waybar/assets/line.png",
+    "size": 18
+  },
+  "clock#C": {
+    "format": "{:%M}"
+  }
+}
